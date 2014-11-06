@@ -1,0 +1,24 @@
+module StockExchange
+{
+   exception NonExistingStock{};
+
+   struct Quote{
+      string name;
+      string id;
+      string price;
+    };
+     
+  interface Responder{
+    oneway void push (in Quote quote);
+        
+  };
+  
+  interface ServerCommunication{
+
+    void register_callback (in string Quote_info, in Responder responder);
+      
+    void unregister_callback (in Responder responder);
+    
+  };
+  
+};

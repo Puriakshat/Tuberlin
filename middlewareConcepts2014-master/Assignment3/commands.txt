@@ -1,0 +1,5 @@
+
+ns -Djacorb.naming.ior_filename=/home/dafarache/public_html/NS_Ref -DOAPort=22010
+
+
+
